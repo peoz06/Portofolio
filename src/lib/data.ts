@@ -97,17 +97,6 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Aplikasi Manajemen Keuangan",
-    category: "Android App",
-    year: "2025",
-    status: "Selesai",
-    description:
-      "Aplikasi Android untuk mencatat transaksi, memantau saldo, dan mengelola prioritas keuangan bersama tim dengan alur yang sederhana.",
-    tags: ["Kotlin", "Android Studio", "Material Design"],
-    image: "/projects/keuangan.svg",
-    href: "https://github.com/peoz06/Aplikasi-Manajemen-Keuangan-Kel-3",
-  },
-  {
     title: "Bramjono Transwisata",
     category: "Travel Website",
     year: "2026",
@@ -116,7 +105,7 @@ export const projects: Project[] = [
       "Website katalog paket travel dan open trip dengan layanan custom trip, galeri destinasi, serta alur pemesanan yang responsif.",
     tags: ["Web Development", "UI/UX", "Responsive"],
     image: "/projects/bramjono.webp",
-    href: null,
+    href: "https://ridwanafriza.github.io/prototype-travel/index.html",
   },
   {
     title: "Lombok Idjo",
@@ -127,7 +116,7 @@ export const projects: Project[] = [
       "Website restoran dengan suasana hangat: hero visual, menu andalan, informasi reservasi, serta kanal kritik dan saran.",
     tags: ["HTML", "CSS", "Responsive Design"],
     image: "/projects/lombokidjo.webp",
-    href: "https://github.com/peoz06/LombokIdjo",
+    href: "https://lombokidjo-woad.vercel.app/",
   },
 ];
 

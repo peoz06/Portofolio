@@ -109,6 +109,6 @@ Jalankan `npm run build`, lalu jalankan `npm start` pada server Node.js. Pastika
 
 ## Catatan
 
-- Proyek **Bramjono Transwisata** ditandai *On progress* karena masih dalam pengerjaan.
-- Proyek **Lombok Idjo** ditandai *Konsep* dan tertaut ke repositori GitHub publiknya.
+- Proyek **Bramjono Transwisata** ditandai *On progress* karena masih dalam pengerjaan, dan tertaut ke prototipe live-nya.
+- Proyek **Lombok Idjo** ditandai *Konsep* dan tertaut ke versi live-nya di Vercel.
 - Tahun pada footer ditulis statis (`2026`) agar kompatibel dengan Cache Components Next.js.

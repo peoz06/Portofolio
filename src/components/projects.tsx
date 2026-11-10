@@ -63,7 +63,7 @@ function ProjectCard({ project }: { project: Project }) {
       target="_blank"
       rel="noopener noreferrer"
       className="project-card"
-      aria-label={`Lihat proyek ${project.title} di GitHub`}
+      aria-label={`Buka proyek ${project.title}`}
     >
       {content}
     </a>
