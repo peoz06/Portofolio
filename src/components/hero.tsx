@@ -2,13 +2,12 @@ import { existsSync } from "node:fs";
 import { join } from "node:path";
 import {
   ArrowDown,
-  ArrowUpRight,
   Code2,
   FolderGit2,
   MapPin,
 } from "lucide-react";
-import { profile, whatsappLink } from "@/lib/data";
-import { GithubIcon, WhatsappIcon } from "./icons";
+import { profile } from "@/lib/data";
+import { GithubIcon } from "./icons";
 import ProfilePhoto from "./profile-photo";
 
 export default function Hero() {
@@ -72,16 +71,6 @@ export default function Hero() {
             className="hero-actions hero-anim"
             style={{ animationDelay: "440ms" }}
           >
-            <a
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-whatsapp btn-lg"
-            >
-              <WhatsappIcon size={18} />
-              Hubungi via WhatsApp
-              <ArrowUpRight size={17} />
-            </a>
             <a href="#portofolio" className="btn btn-ghost btn-lg">
               Lihat Portofolio
               <ArrowDown size={16} />
