@@ -243,7 +243,10 @@ svg {
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
+  transition: background 0.5s ease, -webkit-background-clip 0.5s ease;
 }
+
+
 
 /* =========================================================
    Buttons
@@ -638,6 +641,38 @@ svg {
     transparent 68%
   );
   animation: float 19s ease-in-out infinite reverse;
+}
+
+.orb-white {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.35;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.45), transparent 70%);
+}
+
+.orb-white-1 {
+  top: 10%;
+  left: 10%;
+  width: 360px;
+  height: 360px;
+  animation: float 16s ease-in-out infinite;
+}
+
+.orb-white-2 {
+  bottom: 15%;
+  right: 12%;
+  width: 420px;
+  height: 420px;
+  animation: float 22s ease-in-out infinite reverse;
+}
+
+.orb-white-3 {
+  top: 40%;
+  left: 45%;
+  width: 300px;
+  height: 300px;
+  animation: float 18s ease-in-out infinite 3s;
 }
 
 .hero-beam {
