@@ -130,7 +130,7 @@ export default function Hero() {
                 <FolderGit2 size={16} />
               </span>
               <span>
-                <strong>3 Proyek</strong>
+                <strong>2 Proyek</strong>
                 <small>Built & in progress</small>
               </span>
             </div>
