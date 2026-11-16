@@ -28,6 +28,7 @@ export const navItems = [
   { label: "Tentang", href: "#tentang" },
   { label: "Keahlian", href: "#keahlian" },
   { label: "Portofolio", href: "#portofolio" },
+  { label: "Sertifikat", href: "#sertifikat" },
   { label: "Kontak", href: "#kontak" },
 ];
 
@@ -117,6 +118,29 @@ export const projects: Project[] = [
     tags: ["HTML", "CSS", "Responsive Design"],
     image: "/projects/lombokidjo.webp",
     href: "https://lombokidjo-woad.vercel.app/",
+  },
+];
+
+export type Certificate = {
+  title: string;
+  program: string;
+  issuer: string;
+  period: string;
+  number: string;
+  description: string;
+  image: string;
+};
+
+export const certificates: Certificate[] = [
+  {
+    title: "Sertifikat Magang",
+    program: "Internship",
+    issuer: "PT GFT Indonesia Investment — Divisi UV Printing",
+    period: "14 Januari 2026 – 30 Juni 2026",
+    number: "GFTI/HR/049/INTERN/VI/2026",
+    description:
+      "Penyelesaian program magang dengan baik serta menunjukkan sikap profesional dan kemampuan kerja yang baik.",
+    image: "/certificates/sertifikat-magang.png",
   },
 ];
 

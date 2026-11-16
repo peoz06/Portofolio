@@ -1946,6 +1946,219 @@ a.project-card:hover .project-arrow {
 }
 
 /* =========================================================
+   Certificates
+   ========================================================= */
+.certificates-section {
+  overflow: hidden;
+}
+
+.certificates-section::before {
+  content: "";
+  position: absolute;
+  top: 14%;
+  left: -16%;
+  width: 560px;
+  height: 560px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(56, 189, 248, 0.07),
+    transparent 68%
+  );
+  filter: blur(30px);
+  pointer-events: none;
+}
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+  gap: 16px;
+}
+
+.certificate-grid > .reveal {
+  height: 100%;
+}
+
+.certificate-card {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.023);
+  transition:
+    transform 0.35s var(--ease),
+    border-color 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease;
+}
+
+.certificate-card:hover {
+  border-color: rgba(56, 189, 248, 0.32);
+  background: rgba(255, 255, 255, 0.032);
+  box-shadow:
+    0 26px 60px rgba(0, 0, 0, 0.36),
+    0 0 0 1px rgba(56, 189, 248, 0.06);
+  transform: translateY(-6px);
+}
+
+.certificate-media {
+  position: relative;
+  display: block;
+  aspect-ratio: 2000 / 1414;
+  overflow: hidden;
+  background: #0a0a12;
+}
+
+.certificate-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.65s var(--ease);
+}
+
+.certificate-card:hover .certificate-img {
+  transform: scale(1.035);
+}
+
+.certificate-media-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(5, 5, 9, 0.6), transparent 46%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.certificate-card:hover .certificate-media-shade {
+  opacity: 1;
+}
+
+.certificate-zoom {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(5, 5, 9, 0.66);
+  color: #ececf3;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  opacity: 0;
+  transform: translateY(7px);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s var(--ease);
+}
+
+.certificate-card:hover .certificate-zoom,
+.certificate-media:focus-visible .certificate-zoom {
+  opacity: 1;
+  transform: none;
+}
+
+.certificate-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 21px;
+}
+
+.certificate-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: #77778a;
+  font-size: 0.61rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.certificate-body h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0 0;
+  font-family: var(--font-display);
+  font-size: 1.22rem;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+}
+
+.certificate-body h3 svg {
+  flex-shrink: 0;
+  color: var(--primary-bright);
+}
+
+.certificate-desc {
+  flex: 1;
+  margin: 9px 0 0;
+  color: var(--muted);
+  font-size: 0.81rem;
+  line-height: 1.65;
+}
+
+.certificate-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin: 18px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.certificate-meta > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.certificate-meta dt {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #747485;
+  font-size: 0.59rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.certificate-meta dt svg {
+  color: var(--primary-bright);
+}
+
+.certificate-meta dd {
+  margin: 0;
+  color: #d5d5e0;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.certificate-action {
+  align-self: flex-start;
+  margin-top: 18px;
+  padding: 9px 15px;
+  font-size: 0.76rem;
+}
+
+.certificate-action:hover {
+  border-color: rgba(56, 189, 248, 0.38);
+  background: rgba(56, 189, 248, 0.08);
+}
+
+/* =========================================================
    Contact
    ========================================================= */
 .contact-section {
